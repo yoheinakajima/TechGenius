@@ -1,9 +1,4 @@
 body {
-	padding-top:40px;
-	background-color:red;
-	color:red;
-}
-
-.container-fluid {
-	background-color:green;
+	padding-top:100px;
+	background-color:blue;
 }
