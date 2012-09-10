@@ -138,7 +138,6 @@ body {
   line-height: 18px;
   color: #333333;
   background-color: #ffffff;
-  padding-top:40px; /* added by YOHEI */
 }
 a {
   color: #0088cc;
@@ -4563,6 +4562,13 @@ button.close {
     width: 32px;
   }
 }
+
+/* ADDED BY YOHEI */
+body {
+	padding-top:40px;
+}
+
+
 @media (min-width: 1200px) {
   .row {
     margin-left: -30px;
