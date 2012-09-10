@@ -11,7 +11,7 @@ function makearticlesclickable(){
 		$('#articletitle').html(articletitle);
 		$('#articlecontent').html('loading');
 		$.getJSON("functions/loadarticle.php",function(data){
-			alert("Value for 'a': " + data.a + "\nValue for 'b': " + data.b);
+			alert("Data: " + data);
 		});
 		
 	});

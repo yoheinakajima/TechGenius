@@ -1,1 +1,4 @@
-<?php echo json_encode(array("a" => "valueA", "b" => "valueB")); ?>
+<?php 
+$results = array("key" => "value");
+echo $_GET['callback'] . '(' . json_encode($results) . ')';
+?>
