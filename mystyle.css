@@ -1,3 +1,7 @@
 body {
 	padding-top:40px;
 }
+
+.container-fluid {
+	background-color:green;
+}
