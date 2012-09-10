@@ -4895,6 +4895,14 @@ button.close {
 .visible-desktop {
   display: inherit !important;
 }
+
+/* ADDED BY YOHEI */
+body {
+	padding-top:40px;
+}
+
+
+
 @media (min-width: 768px) and (max-width: 979px) {
   .hidden-desktop {
     display: inherit !important;
@@ -5834,4 +5842,10 @@ button.close {
     height: auto !important;
     overflow: visible !important;
   }
+  
+	/* ADDED BY YOHEI */
+	body {
+		padding-top:50px;
+	}
+
 }
