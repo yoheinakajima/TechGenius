@@ -10,8 +10,12 @@ function makearticlesclickable(){
 		$('#container-article').show();
 		$('#articletitle').html(articletitle);
 		$('#articlecontent').html('loading');
-		$.getJSON("functions/loadarticle.php",function(data){
-			alert("Data: " + data);
+		$.ajax({
+			url:"functions/loadarticle.php",
+			type:"post",
+			success:function(data){
+				alert('hey');
+			}
 		});
 		
 	});
