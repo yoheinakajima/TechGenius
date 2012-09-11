@@ -11,7 +11,7 @@ function makearticlesclickable(){
 		$('#articletitle').html(articletitle);
 		$.ajax({
 			url:"functions/loadarticle.php",
-			type:"post",
+			type:"get",
 			success:function(data){
 				$('#articlecontent').html('loaded');
 			}
