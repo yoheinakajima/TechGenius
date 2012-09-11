@@ -13,7 +13,8 @@ function makearticlesclickable(){
 			url:"functions/loadarticle.php",
 			type:"get",
 			success:function(data){
-				$('#articlecontent').html(data.key);
+				alert(data);
+				$('#articlecontent').html(data);
 			}
 		});
 		
