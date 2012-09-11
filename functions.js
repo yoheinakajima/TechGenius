@@ -9,7 +9,7 @@ function makearticlesclickable(){
 		$('#navbar .nav li').removeClass('active');
 		$('#container-article').show();
 		$('#articletitle').html(articletitle);
-		$.get("functions/loadarticle.php",
+		$.getJSON("functions/loadarticle.php?callback=?",
 			function(data){
 				$('#articlecontent').html('loading');
 			},"json");
