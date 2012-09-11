@@ -9,12 +9,11 @@ function makearticlesclickable(){
 		$('#navbar .nav li').removeClass('active');
 		$('#container-article').show();
 		$('#articletitle').html(articletitle);
-		$('#articlecontent').html('loading');
 		$.ajax({
 			url:"functions/loadarticle.php",
 			type:"post",
 			success:function(data){
-				alert('hey');
+				$('#articlecontent').html('loaded');
 			}
 		});
 		
