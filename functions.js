@@ -9,14 +9,14 @@ function makearticlesclickable(){
 		$('#navbar .nav li').removeClass('active');
 		$('#container-article').show();
 		$('#articletitle').html(articletitle);
-		$.ajax({
-			url:"functions/loadarticle.php",
-			type:"get",
-			success:function(data){
+		$.get(
+			"functions/loadarticle.php",
+			function(data){
 				alert(data);
 				$('#articlecontent').html(data);
-			}
-		});
+			},
+			"json"
+		);
 		
 	});
 }
