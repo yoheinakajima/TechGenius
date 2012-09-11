@@ -9,6 +9,7 @@ function makearticlesclickable(){
 		$('#navbar .nav li').removeClass('active');
 		$('#container-article').show();
 		$('#articletitle').html(articletitle);
-		$('#articlecontent').html('loading');
+		$('#articlecontent').html('loading').load('functions/loadarticle.php');
+		
 	});
 }
