@@ -2,5 +2,5 @@
 Wassup Yo
 
 <?php
-	echo "hellol";
+	echo "hello!";
 ?>
