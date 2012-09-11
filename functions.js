@@ -1,6 +1,8 @@
 
 
-
+function loadarticles(){
+	$('#articlelist').load('include/articles.php');
+}
 
 function makearticlesclickable(){
 	$('.article').click(function(){
@@ -9,6 +11,6 @@ function makearticlesclickable(){
 		$('#navbar .nav li').removeClass('active');
 		$('#container-article').show();
 		$('#articletitle').html(articletitle);
-		$('#articlecontent').html('loading').load('functions/loadarticle.php');
+		$('#articlecontent').load('include/article.php');
 	});
 }

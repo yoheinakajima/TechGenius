@@ -57,11 +57,10 @@
 						<li><a href="#">Newest</a></li>
 					</ul>
 				</div>
-				<div>
+				<div id="articlelist">
 					<div>
 						<a href="#" class="article">Do Startup Benchmarks Really Make A Difference?</a><small class="pull-right">VentureBeat</small>
 					</div>
-					<script>makearticlesclickable();</script>
 				</div>
 			</div>
 			<div class="span3">
@@ -131,12 +130,17 @@
 		</div>
 	</div>
 <script>
+$(document).ready(function(){
+	loadarticles();
+	makearticlesclickable();
+
 	$('.navlink').click(function(){
 		var id= $(this).attr('id');
 		$(this).addClass('active');
 		$('#container-article').hide();
 		$('#container-'+id).show();
 	});
+});
 </script>
 </body>
 </html>
