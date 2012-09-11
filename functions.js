@@ -10,6 +10,5 @@ function makearticlesclickable(){
 		$('#container-article').show();
 		$('#articletitle').html(articletitle);
 		$('#articlecontent').html('loading').load('functions/loadarticle.php');
-		
 	});
 }
