@@ -13,7 +13,7 @@ function makearticlesclickable(){
 			"functions/loadarticle.php",
 			function(data){
 				alert(data);
-				$('#articlecontent').html(loading);
+				$('#articlecontent').html('loading');
 			},"json");
 	});
 }
