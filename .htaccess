@@ -1,0 +1,5 @@
+RewriteEngine on
+
+RewriteRule ^([^/\.]+)_ar([^/\.]+)?$ index.php?article=$2 [L]
+RewriteRule ^([^/\.]+)_ke([^/\.]+)?$ index.php?keyword=$2 [L]
+RewriteRule ^([^/\.]+)_au([^/\.]+)?$ index.php?author=$2 [L]

@@ -1,10 +1,69 @@
+body {
+	/*background-image:url('images/bg_heftone.png');*/
+}
+
+
+a:hover {
+	cursor:pointer;
+}
+
 .lead-wrapper {
 	padding-top:10px;
 }
 
-#container-article {
+#articletabs a {
+	font-family:Impact, Charcoal, sans-serif;
+	font-size:20px;
+}
+
+.articleinlist {
+	padding-top:7px;
+	/*border-bottom:1px solid #ddd;*/
+	overflow:hidden;
+}
+.articleinlist img {
+	width:50px;
+	height:50px;
+	border-radius:30px;
+	-moz-border-radius:30px;
+	float:left;
+	margin-right:10px;
+	background-image:url('http://www.any-data-recovery.com/images/public/article.png');
+	background-size: 50px 50px;
+}
+.articlescore {
+	width:20px;
+	height:20px;
+	font-weight:bold;
+	float:left;
+	color:#777;
+	border:2px solid #777;
+	font-size:8px;
+	text-align:center;
+	margin-right:10px;
+}
+.articletitle {
+	padding-top:5px;
+	color:#333;
+	font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+.articletitle:hover {
+	text-decoration:none;
+	color:darkred;
+}
+.articleteaser {
+	font-size:10px;
+	color:#999;
+}
+#container-article, #container-author, #container-keyword, #container-history, #container-about {
 	display:none;
 }
+#articlecontent, #articlecontent p {
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #333;
+}
+
+
 
 
 .change {
